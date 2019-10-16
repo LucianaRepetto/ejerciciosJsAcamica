@@ -1,0 +1,12 @@
+sdk de google, que permite crear aplicaciones multiplataforma nativas.
+framework reactivo
+core c++
+utiliza el lengiaje dart, es compilado a lengiaje nativo (arm (arquitectura de los servidores mobiles))
+dart permite creaar aplicaciones web y ahora tmb para mobile con flutter y para desktop
+Flutter tiene su propio engine y puede tener sus propios widgets
+se va a ver igual en cualquier version de android
+es mas rapido y eficiente que react native
+framework oficial de desarrollo para fuchsia??? nvo sistema opertativo de google, el primero no basado en linux, tienen un kernel propio
+
+necesitamos andoid studio y el jdk de java. primero se instala el jdk. crear la variable JAVA_HOME q apunte al jdk
+Necesita tmb git y Genymotion -- emulador de android, mar facil y rapido que conectar el telefono y probarlo ahi.
