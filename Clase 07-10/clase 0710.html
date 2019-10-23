@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clase 07/10</title>
+</head>
+<body>
+    <script>
+const companies= [
+    {name: "Company One", category: "Finance", start: 1981, end: 2004},
+    {name: "Company Two", category: "Retail", start: 1992, end: 2008},
+    {name: "Company Three", category: "Auto", start: 1990, end: 1998},
+    {name: "Company Four", category: "Retail", start: 1989, end: 2010},
+    {name: "Company Five", category: "Technology", start: 2009, end: 2014},
+    {name: "Company Six", category: "Finance", start: 1987, end: 2010},
+    {name: "Company Seven", category: "Auto", start: 1986, end: 1996},
+    {name: "Company Eight", category: "Technology", start: 2011, end: 2016},
+    {name: "Company Nine", category: "Retail", start: 1981, end: 1989}
+  ];
+  
+  const empresasAño80 = companies.filter(company => company.start > 1979 && company.end < 1990);
+
+  const empresasRetail = companies.filter(company=> company.category==='Retail')
+            .map( function(company){ return [company.start, company.end] })
+
+  console.log(empresasRetail);
+
+
+const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
+
+const mayor = ages.filter(age => age > 20 && age <26);
+console.log(mayor);
+
+
+var str = '12345';
+let revers = [].map.call(str, function(x) {   
+  return x;
+}).reverse().join('');
+console.log(revers);
+
+/*
+var hola = function(){
+    if( revers === str) {
+    return true; 
+};
+
+console.log(hola);*/
+
+//se va a usar .map porq devueklve un array de valores, filter no lo hace
+const ages2 = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
+const nueva = ages2.filter(años => años >= 5 && años <= 20);
+console.log(nueva);
+const nueva2 = nueva.reduce(function(valanterior, valactual, indice, vector){
+    return valanterior + valactual;
+});
+ console.log(nueva2);
+
+    </script>
+</body>
+</html>
