@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Document</title>
+</head>
+<body>
+   <div id="datos">
+       <p>nombre: xxxx</p>
+       <p>edad: xxxxx</p>
+       <p>altura:xxxx</p>
+   </div>
+<script>
+    let eliminar = document.getElementById("datos");
+    let cambiar = document.getElementsByTagName("p");
+    let parrafo = document.createElement("p");
+    let contenido = document.createTextNode("Carrera: XXXXX");
+    
+    let nuevo = parrafo.appendChild(contenido);
+    eliminar.removeChild(cambiar[2]);
+    eliminar.appendChild(nuevo);
+    
+
+
+</script>
+
+
+
+
+</body>
+</html>

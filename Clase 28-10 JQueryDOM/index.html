@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <DIV id="nuevo">
+        <p>Hola como estas</p>
+    </DIV>
+
+<script>
+let elemento = document.getElementById("nuevo");
+console.log(elemento);
+
+let texto = document.getElementsByTagName("p");
+console.log(texto[0]);
+
+let parrafo = document.createElement("p");
+
+let contenido = document.createTextNode("Hola  a todos");
+
+parrafo.appendChild(contenido);
+elemento.appendChild(parrafo);
+
+elemento.removeChild(parrafo)
+
+</script>
+
+</body>
+</html>
