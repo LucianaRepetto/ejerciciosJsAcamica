@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>fadeInOut</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <div id="cabecera">
+        <h1>Visor de imágenes</h1>
+    </div>
+    <div id="principal">
+        <div id="visor">
+            <img src='./img/foto1.jpg' alt='1. foto 1 descripcion.' name='fotoVisor' id="fotoVisor" />
+            <div id="titulo">1. foto 1 descripcion.</div>
+        </div>
+    </div>
+    <div id="menu">
+        <img src='./img/foto1.jpg' alt='1. foto 1 descripcion.' name='fotos1' id='fotos1' onclick="mifoto(1)" />
+        <img src='./img/foto2.jpg' alt='2. foto 2 descripcion.' name='fotos2' id='fotos2' onclick="mifoto(2)" />
+        <img src='./img/foto3.jpg' alt='3. foto 3 descripcion.' name='fotos3' id='fotos3' onclick="mifoto(3)" />
+        <img src='./img/foto4.jpg' alt='4. foto 4 descripcion.' name='fotos4' id='fotos4' onclick="mifoto(4)" />
+        <img src='./img/foto5.jpg' alt='5. foto 5 descripcion.' name='fotos5' id='fotos5' onclick="mifoto(5)" />
+        <img src='./img/foto6.jpg' alt='6. foto 6 descripcion.' name='fotos6' id='fotos6' onclick="mifoto(6)" />
+        <img src='./img/foto7.jpg' alt='7. foto 7 descripcion.' name='fotos7' id='fotos7' onclick="mifoto(7)" />
+        <img src='./img/foto8.jpg' alt='8. foto 8 descripcion.' name='fotos8' id='fotos8' onclick="mifoto(8)" />
+    </div>
+
+
+    <script type="text/javascript">
+        function mifoto(numeroDeFoto) {
+            $('#visor').fadeOut('fast', function() {
+                const foto = './img/foto' + numeroDeFoto + '.jpg';
+                //
+                document.getElementById('fotoVisor').src = foto;
+                const titulo = document.getElementById('fotos' + numeroDeFoto).alt;
+                document.getElementById('titulo').innerHTML = titulo;
+                $('#visor').fadeIn('slow');
+            });
+        }
+    </script>
+</body>
+
+</html>

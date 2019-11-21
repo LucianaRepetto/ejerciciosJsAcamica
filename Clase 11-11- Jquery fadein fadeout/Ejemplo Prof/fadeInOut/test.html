@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jquery fadein- fadeout</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <style>
+        #parrafo1 {
+            background-color: red;
+        }
+        #parrafo2 {
+            background-color: blue;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p id="parrafo1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit labore atque dignissimos quaerat dolorum quos doloribus, rem quo ullam nihil iusto, quis cupiditate recusandae vero nemo praesentium impedit corporis. Dolor?
+        Rem consequuntur, aut voluptate eaque voluptatem, iste sapiente sequi fuga magnam tempore cupiditate dolorem assumenda numquam at a neque! Laboriosam pariatur labore nemo similique nulla fugiat excepturi. Illo, hic suscipit.
+        Distinctio, nulla in illum quibusdam ipsum aliquam repellat asperiores praesentium rem explicabo laborum sunt expedita quia laudantium sit quasi inventore eos dolore maxime autem libero ipsa dignissimos! Dolor, autem rerum.
+       Voluptas impedit sapiente rem ab omnis? Deserunt officiis magnam harum repudiandae quasi rem veniam laudantium amet, atque rerum reiciendis corporis ducimus cum totam. Corporis eius harum, maiores atque minima enim.
+        Exercitationem qui laboriosam esse, error cumque reprehenderit architecto. Unde mollitia nobis ipsa labore illum dolore accusantium exercitationem, totam laudantium optio aspernatur repudiandae error libero eum itaque quae veniam. Quo, nihil.
+        Ipsam aut asperiores reprehenderit veritatis atque commodi esse voluptatem dignissimos ullam fugiat, accusantium velit consequuntur omnis, unde exercitationem numquam vero, eos soluta nesciunt alias libero? Molestiae ullam iusto fugit est?</p>
+        <p id="parrafo2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit labore atque dignissimos quaerat dolorum quos doloribus, rem quo ullam nihil iusto, quis cupiditate recusandae vero nemo praesentium impedit corporis. Dolor?
+            Rem consequuntur, aut voluptate eaque voluptatem, iste sapiente sequi fuga magnam tempore cupiditate dolorem assumenda numquam at a neque! Laboriosam pariatur labore nemo similique nulla fugiat excepturi. Illo, hic suscipit.
+            Distinctio, nulla in illum quibusdam ipsum aliquam repellat asperiores praesentium rem explicabo laborum sunt expedita quia laudantium sit quasi inventore eos dolore maxime autem libero ipsa dignissimos! Dolor, autem rerum.
+           Voluptas impedit sapiente rem ab omnis? Deserunt officiis magnam harum repudiandae quasi rem veniam laudantium amet, atque rerum reiciendis corporis ducimus cum totam. Corporis eius harum, maiores atque minima enim.
+            Exercitationem qui laboriosam esse, error cumque reprehenderit architecto. Unde mollitia nobis ipsa labore illum dolore accusantium exercitationem, totam laudantium optio aspernatur repudiandae error libero eum itaque quae veniam. Quo, nihil.
+            Ipsam aut asperiores reprehenderit veritatis atque commodi esse voluptatem dignissimos ullam fugiat, accusantium velit consequuntur omnis, unde exercitationem numquam vero, eos soluta nesciunt alias libero? Molestiae ullam iusto fugit est?</p>
+   </div>
+   <div>
+       <button id="ocultar">Ocultar</button>
+   </div>
+   <script>
+       $(document).ready(function() {
+            $('#ocultar').click(function() {
+                // $('#parrafo1').fadeOut('slow', function() {
+                //     console.log('el parrafo1 se ha ocultado ');
+                //     $('#parrafo2').fadeIn('fast');
+                // });
+                // show & hide 
+                $('#parrafo1').hide('slow', function() {
+                    $('#parrafo2').show('fast');
+                });
+            });
+       });
+   </script>
+</body>
+</html>

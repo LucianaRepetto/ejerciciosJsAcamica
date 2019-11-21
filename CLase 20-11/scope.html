@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Scope</title>
+</head>
+<body>
+    <script>
+        // global scope
+        // var animal = 'perro';
+        // console.log(animal);
+        // function obtenerAnimal () {
+        //     console.log(animal);
+        // }
+        // obtenerAnimal();
+​
+        // // global scope 
+        // function funcion1() {
+        //     // local scope de funcion1
+        //     function funcion2() {
+        //         //local scope de la funcion2
+        //     }
+        // }
+        // // global scope
+        // function funcion3() {
+        //     // local scope de la funcion3
+        // }
+        //global scope
+        // function scope
+        // function obtenerFruta() {
+        //     var fruta1 = 'naranja';
+        //     console.log('dentro de la funcion', fruta1);
+        // }
+        // obtenerFruta();
+        // console.log(fruta1);
+        // block scope
+        // function obtenerJuguetes() {
+        //     var juguete1 = undefined;
+        //     if(true) {
+        //         juguete1 = 'autito';
+        //         const juguete2 = 'camion';
+        //         let juguete3 = 'muñeca';
+        //     }
+        //     console.log(juguete1);
+        //     console.log(juguete2);
+        //     console.log(juguete3);
+        // }
+        // obtenerJuguetes();
+        // lexical Scope
+        function declararFrutas() {
+            var fruta1 = 'manzana';
+            const fruta2 = 'naranja';
+            let fruta3 = 'pera';
+            function mostrarFrutas() {
+                console.log(fruta1);
+                console.log(fruta2);
+                console.log(fruta3);
+            }
+            mostrarFrutas();
+        }
+        declararFrutas();
+    </script>
+</body>
+</html>
